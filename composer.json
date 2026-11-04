@@ -1,0 +1,32 @@
+{
+    "name": "hirdeshvashishtha/laravel-audit-vault",
+    "description": "Enterprise-grade immutable Eloquent audit logging with cryptographic SHA-256 tamper detection and JSON diff tracking for Laravel.",
+    "keywords": ["laravel", "audit", "compliance", "security", "eloquent", "logging", "enterprise"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hirdesh Kumar Vashishtha",
+            "email": "hirdeshv48@gmail.com",
+            "role": "Senior IT Manager & Enterprise Architect"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HirdeshVashishtha\\AuditVault\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HirdeshVashishtha\\AuditVault\\AuditVaultServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
